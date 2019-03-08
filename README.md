@@ -2,7 +2,7 @@
 # RecyclerViewPager
 A ViewPager implemention base on RecyclerView. Support fling operation like gallary.
 
-android.support.v4.view.ViewPager的完美替代品
+androidx.viewpager.widget.ViewPager的完美替代品
 
 ## Features:
 1. Base on RecyclerView.

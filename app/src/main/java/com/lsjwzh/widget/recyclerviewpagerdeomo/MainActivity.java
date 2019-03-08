@@ -18,9 +18,9 @@ package com.lsjwzh.widget.recyclerviewpagerdeomo;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.demo_list);
         mDemoRecyclerView = (RecyclerView) findViewById(R.id.demo_list);
-        mDemoRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager
+        mDemoRecyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView
                 .VERTICAL, false));
         mDemoListAdapter = new DemoListAdapter();
         mDemoRecyclerView.setAdapter(mDemoListAdapter);
